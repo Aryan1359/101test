@@ -1,1 +1,3 @@
-// No tests for this demo landing page yet.
+test('placeholder test – always passes', () => {
+  expect(true).toBe(true);
+});
