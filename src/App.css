@@ -1,57 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:400,700&display=swap');
+
+body {
+  background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%);
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%);
-}
-
-.App-logo {
-  height: 60px;
-  pointer-events: none;
-  margin-bottom: 10px;
-}
-
-.App-header {
-  background: transparent;
-  padding: 30px;
-  border-radius: 24px;
-  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-h1 {
-  color: #374151;
-  margin-bottom: 10px;
-  font-size: 2.2em;
-  letter-spacing: 1px;
-}
-
-h2 {
-  color: #6366f1;
-  margin-bottom: 18px;
-  font-size: 1.3em;
-  font-weight: 400;
-}
-
-p {
-  color: #22223b;
-  font-size: 1.1em;
-  margin-bottom: 10px;
+.App-header-pro {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 40px 0 rgba(68,86,136,0.09), 0 1.5px 6px rgba(68,86,136,0.08);
+  padding: 48px 32px 36px 32px;
   max-width: 430px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.5;
+  width: 96vw;
+  margin: 30px 0;
+  text-align: center;
+  position: relative;
 }
 
-@media (max-width: 600px) {
-  .App-header {
-    padding: 10px;
+.Pro-logo {
+  height: 52px;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 2px 8px #a3bffa60);
+  animation: Pro-logo-spin infinite 7s linear;
+}
+
+@keyframes Pro-logo-spin {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+
+.Pro-main h1 {
+  font-size: 2.1em;
+  font-weight: 800;
+  color: #232946;
+  margin-bottom: 2px;
+  position: relative;
+  letter-spacing: 0.5px;
+  padding-bottom: 0.4em;
+}
+
+.Pro-main .accent-bar {
+  display: block;
+  height: 3px;
+  width: 44px;
+  background: linear-gradient(90deg,#6366f1 40%,#98c6f2 100%);
+  margin: 7px auto 0 auto;
+  border-radius: 3px;
+  content: "";
+}
+
+.Pro-main h2 {
+  color: #6366f1;
+  font-weight: 500;
+  margin-bottom: 14px;
+  font-size: 1.2em;
+}
+
+.divider {
+  border: none;
+  height: 1.5px;
+  background: linear-gradient(90deg,#a5b4fc, #e0e7ff);
+  width: 36%;
+  margin: 18px auto 24px auto;
+  opacity: 0.6;
+  border-radius: 2px;
+}
+
+.Pro-about p {
+  color: #22223b;
+  font-size: 1.08em;
+  margin: 0 0 20px 0;
+  line-height: 1.7;
+}
+
+.Pro-card {
+  background: linear-gradient(100deg, #eef2ff 60%, #f8fafc 100%);
+  border-radius: 16px;
+  box-shadow: 0 1.5px 8px 0 rgba(99,102,241,0.07);
+  padding: 18px 17px 16px 17px;
+  margin: 0 auto 22px auto;
+  max-width: 345px;
+  text-align: center;
+}
+
+.Pro-card h3 {
+  margin-top: 0;
+  color: #3539a6;
+  font-size: 1.15em;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.Pro-card p {
+  margin: 0;
+  font-size: 1em;
+  color: #33354d;
+}
+
+.Pro-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 22px;
+  background: linear-gradient(90deg, #6366f1 55%, #818cf8 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background 0.25s;
+}
+
+.Pro-btn:hover {
+  background: linear-gradient(90deg, #6366f1 30%, #6366f1 100%);
+  cursor: pointer;
+}
+
+.Pro-footer {
+  margin-top: 18px;
+  color: #888fa8;
+  font-size: 0.95em;
+}
+
+@media (max-width: 540px) {
+  .App-header-pro {
+    max-width: 97vw;
+    padding: 24px 7vw 20px 7vw;
   }
-  h1 { font-size: 1.3em; }
-  h2 { font-size: 1em; }
-  p { font-size: 0.95em; }
+  .Pro-main h1 {
+    font-size: 1.2em;
+  }
+  .Pro-main h2 {
+    font-size: 1em;
+  }
 }

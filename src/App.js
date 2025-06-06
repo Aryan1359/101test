@@ -4,29 +4,35 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-        {/* Use semantic heading structure */}
-        <h1>Aryan Yaghobi</h1>
-        <h2>Software Engineer & Full Stack Web Developer</h2>
-
-        {/* Use <section> or <main> for content blocks */}
-        <section>
-          <p>
-            This site is a live demonstration of automated deployment using GitHub Actions and GitHub Pages.
-          </p>
-          <p>
-            Need help setting up your own web project, or want advice on CI/CD, deployment, or React? <br />
-            I’m happy to share what I know—reach out for a quick consultation!
-          </p>
-        </section>
-
-        {/* Use a <footer> for copyright/disclaimer type info */}
-        <footer style={{ fontSize: '0.9em', color: '#888', marginTop: '20px' }}>
-          <p>(This is a sample project for learning, not a portfolio.)</p>
-        </footer>
-
+      <header className="App-header-pro">
+        <img src={logo} className="Pro-logo" alt="logo" />
+        <div className="Pro-main">
+          <h1>
+            Aryan Yaghobi
+            <span className="accent-bar"></span>
+          </h1>
+          <h2>Software Engineer &amp; Full Stack Web Developer</h2>
+          <hr className="divider" />
+          <div className="Pro-about">
+            <p>
+              Welcome! This is a live demo of automated deployment using <b>GitHub Actions</b> &amp; <b>GitHub Pages</b>.
+              <br /><br />
+              I help people and teams launch, improve, and automate web projects.
+            </p>
+          </div>
+          <div className="Pro-card">
+            <h3>Need a hand with your web app or CI/CD?</h3>
+            <p>
+              If you want to deploy your own project or automate builds, reach out—I'm glad to help with setup or quick consulting!
+            </p>
+                  <a href="mailto:Aryanedu80@gmail.com" className="Pro-btn">Contact Me</a>
+          </div>
+          <div className="Pro-footer">
+            <small>
+              (This is a sample project for learning. Not a portfolio.)
+            </small>
+          </div>
+        </div>
       </header>
     </div>
   );
