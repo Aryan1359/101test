@@ -25,7 +25,8 @@ function App() {
             <p>
               If you want to deploy your own project or automate builds, reach out—I'm glad to help with setup or quick consulting!
             </p>
-                  <a href="mailto:Aryanedu80@gmail.com" className="Pro-btn">Contact Me</a>
+                   
+                  {/* <a href="mailto:your@email.com" className="Pro-btn">Contact Me</a> */}
           </div>
           <div className="Pro-footer">
             <small>
